@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icons/icomoon.eot?uueod9');
+  src:  url('fonts/icons/icomoon.eot?uueod9#iefix') format('embedded-opentype'),
+    url('fonts/icons/icomoon.ttf?uueod9') format('truetype'),
+    url('fonts/icons/icomoon.woff?uueod9') format('woff'),
+    url('fonts/icons/icomoon.svg?uueod9#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cplusplus:before {
+  content: "\e900";
+  color: #00599c;
+}
+.icon-csharp:before {
+  content: "\e901";
+  color: #239120;
+}
+.icon-css3:before {
+  content: "\e902";
+  color: #1572b6;
+}
+.icon-facebook:before {
+  content: "\e903";
+  color: #1877f2;
+}
+.icon-github:before {
+  content: "\e904";
+}
+.icon-go:before {
+  content: "\e905";
+  color: #00add8;
+}
+.icon-html5:before {
+  content: "\e906";
+  color: #e34f26;
+}
+.icon-java:before {
+  content: "\e907";
+  color: #007396;
+}
+.icon-jquery:before {
+  content: "\e908";
+  color: #0769ad;
+}
+.icon-mysql:before {
+  content: "\e909";
+  color: #4479a1;
+}
+.icon-php:before {
+  content: "\e90a";
+  color: #777bb4;
+}
+.icon-python:before {
+  content: "\e90b";
+  color: #3776ab;
+}
+.icon-reddit:before {
+  content: "\e90c";
+  color: #ff4500;
+}
+.icon-rust:before {
+  content: "\e90d";
+}
+.icon-swift:before {
+  content: "\e90e";
+  color: #fa7343;
+}
+.icon-twitter:before {
+  content: "\e90f";
+  color: #1da1f2;
+}

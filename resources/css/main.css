@@ -1,0 +1,64 @@
+*{ box-sizing: border-box; }
+html{ max-height: 750px; }
+ul{ list-style-type: none; padding: 0; margin: 0; }
+a{ color: #EF8354; text-decoration: none; }
+p, h4{ margin: 0; }
+h1{font-size: 1.1em;}
+body{ font-family: Montserrat; font-weight: bold; background-color: #2a2a2a; color: teal; }
+main{ display: flex; justify-content: center; align-items: center; flex-direction: column; width: 70%; margin: 0 auto; font-size: 12px; }
+.chiqui{display: none;}
+.progreso, .pendientes, .finalizados, .proyectos, .certificados {opacity: 1;}
+section, footer div, .sololearn {border: 3px solid black; border-radius: 10px; margin-top: 30px; padding: 0 15px; }
+.contenido {width: 100%; display: flex; justify-content: space-around; flex-wrap: wrap;}
+.contenido span {display: inline-block; font-size: 16px; text-decoration: underline; padding-top: 8px; padding-bottom: 10px;}
+.progreso {width: 55%; text-align: center;}
+.pendientes, .finalizados {width: 20%; text-align: center; font-size: 30px;}
+.proyectos, .certificados {width: 100%; text-align: center;}
+.certificados {display: flex; justify-content: space-around; flex-wrap: wrap;}
+.progreso, .sololearn {width: 45%; font-size: 30px;}
+.progreso ul, .pendientes ul, .finalizados ul, .sololearn ul {display: flex; justify-content: center;} 
+.sololearn ul {display: flex; justify-content: center;}
+.sololearn li, .pendientes li, .finalizados li, .progreso li{margin: 0 6px;}
+.gvasco {width: 100%; padding: 5px;}
+progress{height: 1em; width: 10em;vertical-align: -0.2em;}
+
+.tal{text-align: left;}.tar{text-align: right;}.tac{text-align: center;}.sub{text-decoration: underline;}
+.textoRojo{color:red;}.textoAzul{color:RoyalBlue;}.textoGris{color:DarkGray;}.textoVerde{color:SpringGreen;}.textonaranja{color: orange;}.textolima{color: lime;}.textovioleta{color: blueviolet;}
+.rrss ul{float: left; position: relative; top: -500px; font-size: 40px;}
+
+@media screen and (max-width: 1450px){
+    main{width: 60%;}
+    .pendientes, .finalizados{display: none;}
+
+}
+
+@media screen and (max-width: 1300px){
+    main{width: 100%;}
+    .contenido{display: block; }
+    .chiqui, .progreso, .proyectos, .pendientes, .finalizados, footer div{width: 100%; height: auto; margin: 15px auto; border: 3px solid black;}
+    aside{display: flex; justify-content: center;}
+    .rrss ul{float: none; display: inline-flex; position: static;}
+    .rrss li{margin: 0 5px;}
+    footer div a{margin: 0 6px;}
+}
+
+@media screen and (max-width: 900px){
+    .certificados{display: none;}
+}
+
+@media screen and (max-width: 800px){
+    .proyectos table tr th{display: none;}
+    .proyectos table tr td:nth-of-type(1){text-align: center;}
+    .proyectos table tr td:nth-of-type(2){display: none;}
+    .proyectos table tr td:nth-of-type(3){display: none;}
+    .proyectos table tr td:nth-of-type(4){display: none;}
+    .proyectos table tr td:nth-of-type(5){display: none;}
+    .chiqui{display: block;}
+}
+
+@-moz-document url-prefix() { 
+    progress{height: 8px; width: 10em;vertical-align: 0.1em;border-radius: 20px;}
+    progress[value]::-moz-progress-bar { color:rgb(85, 121, 226); border-radius: 20px;}
+    .abandonado{background-color: red;}
+  }
+.proyectos table tr td:nth-child(3) {cursor: pointer;}
